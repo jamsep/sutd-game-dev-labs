@@ -276,7 +276,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -298,7 +298,7 @@ TextureImporter:
         width: 28
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -320,7 +320,7 @@ TextureImporter:
         width: 34
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -342,7 +342,7 @@ TextureImporter:
         width: 32
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -364,7 +364,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -386,7 +386,7 @@ TextureImporter:
         width: 80
         height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -395,6 +395,116 @@ TextureImporter:
       bones: []
       spriteID: 271584fbe9bfcc245b0269f14df3fa57
       internalID: -1257117079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple_green
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 983
+        width: 64
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da38bb5f0f2c9546a6b70fadf1f8f27
+      internalID: -1601074648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mystery_1
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 1076
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cbbc15c16b96ff4b8274fb274b6fae8
+      internalID: -95494231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick_light
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1189
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b6387f762ac2d4faadbc2a4692a0aa
+      internalID: 471084475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: single_bush
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 983
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2bb7ab51c22b114aa35fadffb6099c9
+      internalID: -850796433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: double_bush
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 983
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93696d0dccb254c42b576ce89907db4e
+      internalID: 1815032930
       vertices: []
       indices: 
       edges: []
@@ -414,17 +524,22 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Ground Brown: -703172041
+      brick_light: 471084475
       castle: -1257117079
+      double_bush: 1815032930
       double_cloud: -1517618904
       hill_big: -396417861
       hill_small: 1424162610
+      mystery_1: -95494231
       pipe_connector: -1201110029
       pipe_down: 344380252
       pipe_left: -1723514246
       pipe_up: 39222196
       pipe_vertical: 1562724291
+      single_bush: -850796433
       single_cloud: -308794536
       triple_cloud: -911583345
+      triple_green: -1601074648
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

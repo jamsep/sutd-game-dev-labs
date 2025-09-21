@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -10,6 +12,18 @@ public class PlayerMovement : MonoBehaviour
     public float maxSpeed = 20;
     public float upSpeed = 10;
     private bool onGroundState = true;
+    private SpriteRenderer marioSprite;
+    private bool faceRightState = true;
+
+    public TextMeshProUGUI scoreText;
+    public GameObject enemies;
+
+    public GameObject gameOverUI;   
+    public GameObject inGameUI;
+
+    public TextMeshProUGUI endScoreText;
+    public JumpOverGoomba jumpOverGoomba;
+
 
     // Start is called before the first frame update
     void Start()
@@ -17,18 +31,31 @@ public class PlayerMovement : MonoBehaviour
         // Set to be 30 FPS
         Application.targetFrameRate = 30;
         marioBody = GetComponent<Rigidbody2D>();
+        marioSprite = GetComponent<SpriteRenderer>();
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown("a") && faceRightState)
+        {
+            faceRightState = false;
+            marioSprite.flipX = true;
+        }
 
+        if (Input.GetKeyDown("d") && !faceRightState)
+        {
+            faceRightState = true;
+            marioSprite.flipX = false;
+        }
     }
 
     void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.CompareTag("Ground")) onGroundState = true;
+
+
     }
 
     void FixedUpdate()
@@ -55,5 +82,56 @@ public class PlayerMovement : MonoBehaviour
             marioBody.AddForce(Vector2.up * upSpeed, ForceMode2D.Impulse);
             onGroundState = false;
         }
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("Collided with goomba!");
+            Time.timeScale = 0.0f;
+            // Show "Game Over" panel
+            gameOverUI.SetActive(true);
+
+            // Hide the score UI
+            inGameUI.SetActive(false);
+
+            endScoreText.text = scoreText.text;
+            // reset score
+            jumpOverGoomba.score = 0;
+
+        }
+
+    }
+
+    public void RestartButtonCallback(int input)
+    {
+        Debug.Log("Restart!");
+        // reset everything
+        ResetGame();
+        // resume time
+        Time.timeScale = 1.0f;
+        gameOverUI.SetActive(false);
+
+        // Hide the score UI
+        inGameUI.SetActive(true);
+    }
+
+    private void ResetGame()
+    {
+        // reset position
+        marioBody.transform.position = new Vector3(-3.24f, -2.47f, 0.0f);
+        // reset sprite direction
+        faceRightState = true;
+        marioSprite.flipX = false;
+        // reset score
+        scoreText.text = "Score: 0";
+        // reset Goomba
+        foreach (Transform eachChild in enemies.transform)
+        {
+            eachChild.transform.localPosition = eachChild.GetComponent<EnemyMovement>().startPosition;
+        }
+        // reset score
+        jumpOverGoomba.score = 0;
+
     }
 }
