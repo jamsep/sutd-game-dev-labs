@@ -37,6 +37,9 @@ public class PlayerMovement : MonoBehaviour
     public bool alive = true;
     public Transform gameCamera;
 
+    int collisionLayerMask = (1 << 3) | (1 << 6) | (1 << 7);
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -74,14 +77,13 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.CompareTag("Ground") && !onGroundState)
+
+        if (((collisionLayerMask & (1 << col.transform.gameObject.layer)) > 0) & !onGroundState)
         {
             onGroundState = true;
             // update animator state
             marioAnimator.SetBool("onGround", onGroundState);
         }
-
-
     }
 
     void FixedUpdate()
