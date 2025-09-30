@@ -382,17 +382,6 @@ Transform:
   - {fileID: 703388964}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &249542102 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4839555239970538215, guid: 6d46300ded2061a488d634eeb080600a, type: 3}
-  m_PrefabInstance: {fileID: 1389568392}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88f8300de508a154db01c09c6adf3591, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MysteryCoin
 --- !u!1 &511582277
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,42 +767,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1512093061}
-        m_TargetAssemblyTypeName: MysteryCoin, Assembly-CSharp
-        m_MethodName: RestartButtonCallback
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 249542102}
-        m_TargetAssemblyTypeName: MysteryCoin, Assembly-CSharp
-        m_MethodName: RestartButtonCallback
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 673591529}
-        m_TargetAssemblyTypeName: MysteryCoin, Assembly-CSharp
-        m_MethodName: RestartButtonCallback
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &540904986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -997,11 +950,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2523744366053481748, guid: 9092a0e1a5bb6bc49974e16693804e73, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.37
+      value: -0.17
       objectReference: {fileID: 0}
     - target: {fileID: 2523744366053481748, guid: 9092a0e1a5bb6bc49974e16693804e73, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.9
+      value: -4.87792
       objectReference: {fileID: 0}
     - target: {fileID: 2523744366053481748, guid: 9092a0e1a5bb6bc49974e16693804e73, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1035,10 +988,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7335090465798492825, guid: 9092a0e1a5bb6bc49974e16693804e73, type: 3}
-      propertyPath: m_Distance
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1049,17 +998,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2523744366053481748, guid: 9092a0e1a5bb6bc49974e16693804e73, type: 3}
   m_PrefabInstance: {fileID: 666403710}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &673591529 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4839555239970538215, guid: 6d46300ded2061a488d634eeb080600a, type: 3}
-  m_PrefabInstance: {fileID: 1744122211}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88f8300de508a154db01c09c6adf3591, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MysteryCoin
 --- !u!1 &682160254
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,6 +1153,72 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &693636284
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 962552154}
+    m_Modifications:
+    - target: {fileID: 665802163367649344, guid: 8fc196fdf129e7b47a12ea26ca41306f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.3023796
+      objectReference: {fileID: 0}
+    - target: {fileID: 665802163367649344, guid: 8fc196fdf129e7b47a12ea26ca41306f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.8779202
+      objectReference: {fileID: 0}
+    - target: {fileID: 665802163367649344, guid: 8fc196fdf129e7b47a12ea26ca41306f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 665802163367649344, guid: 8fc196fdf129e7b47a12ea26ca41306f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 665802163367649344, guid: 8fc196fdf129e7b47a12ea26ca41306f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 665802163367649344, guid: 8fc196fdf129e7b47a12ea26ca41306f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 665802163367649344, guid: 8fc196fdf129e7b47a12ea26ca41306f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 665802163367649344, guid: 8fc196fdf129e7b47a12ea26ca41306f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 665802163367649344, guid: 8fc196fdf129e7b47a12ea26ca41306f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 665802163367649344, guid: 8fc196fdf129e7b47a12ea26ca41306f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3445065782884005787, guid: 8fc196fdf129e7b47a12ea26ca41306f, type: 3}
+      propertyPath: m_Name
+      value: mystery_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3445065782884005787, guid: 8fc196fdf129e7b47a12ea26ca41306f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8fc196fdf129e7b47a12ea26ca41306f, type: 3}
+--- !u!4 &693636285 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 665802163367649344, guid: 8fc196fdf129e7b47a12ea26ca41306f, type: 3}
+  m_PrefabInstance: {fileID: 693636284}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &702040853
 GameObject:
   m_ObjectHideFlags: 0
@@ -1463,7 +1467,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: bc5ca5e0703c54692a186434e1149ccd, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2029,11 +2033,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!4 &921162119 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2523744366053481748, guid: b615020cd3de8be49b50559d92db875b, type: 3}
-  m_PrefabInstance: {fileID: 1701174670}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &942886682
 GameObject:
   m_ObjectHideFlags: 0
@@ -2160,7 +2159,7 @@ Transform:
   - {fileID: 1542315688}
   - {fileID: 1472979137}
   - {fileID: 666403711}
-  - {fileID: 921162119}
+  - {fileID: 693636285}
   - {fileID: 15449959}
   - {fileID: 682160255}
   m_Father: {fileID: 0}
@@ -2401,42 +2400,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 9166938163868265433}
-        m_TargetAssemblyTypeName: MysteryCoin, Assembly-CSharp
-        m_MethodName: RestartButtonCallback
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1512093061}
-        m_TargetAssemblyTypeName: MysteryCoin, Assembly-CSharp
-        m_MethodName: RestartButtonCallback
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 249542102}
-        m_TargetAssemblyTypeName: MysteryCoin, Assembly-CSharp
-        m_MethodName: RestartButtonCallback
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 673591529}
         m_TargetAssemblyTypeName: MysteryCoin, Assembly-CSharp
         m_MethodName: RestartButtonCallback
         m_Mode: 3
@@ -2936,11 +2899,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6538938442573175831, guid: 6d46300ded2061a488d634eeb080600a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.37
+      value: -1.21
       objectReference: {fileID: 0}
     - target: {fileID: 6538938442573175831, guid: 6d46300ded2061a488d634eeb080600a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.91
+      value: -4.85
       objectReference: {fileID: 0}
     - target: {fileID: 6538938442573175831, guid: 6d46300ded2061a488d634eeb080600a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2997,11 +2960,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2523744366053481748, guid: 9092a0e1a5bb6bc49974e16693804e73, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.37
+      value: -2.26
       objectReference: {fileID: 0}
     - target: {fileID: 2523744366053481748, guid: 9092a0e1a5bb6bc49974e16693804e73, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.92
+      value: -4.87792
       objectReference: {fileID: 0}
     - target: {fileID: 2523744366053481748, guid: 9092a0e1a5bb6bc49974e16693804e73, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3034,10 +2997,6 @@ PrefabInstance:
     - target: {fileID: 2523744366053481748, guid: 9092a0e1a5bb6bc49974e16693804e73, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7335090465798492825, guid: 9092a0e1a5bb6bc49974e16693804e73, type: 3}
-      propertyPath: m_Distance
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3082,17 +3041,6 @@ Transform:
   - {fileID: 1020289951}
   m_Father: {fileID: 1594784790}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1512093061 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4839555239970538215, guid: 6d46300ded2061a488d634eeb080600a, type: 3}
-  m_PrefabInstance: {fileID: 2136383618}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88f8300de508a154db01c09c6adf3591, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MysteryCoin
 --- !u!4 &1542315688 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2523744366053481748, guid: 9092a0e1a5bb6bc49974e16693804e73, type: 3}
@@ -3395,63 +3343,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3468745627798342251, guid: 8bde144afee323543a27fe9949927fac, type: 3}
   m_PrefabInstance: {fileID: 1604855813}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1701174670
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 962552154}
-    m_Modifications:
-    - target: {fileID: 2423305356237879355, guid: b615020cd3de8be49b50559d92db875b, type: 3}
-      propertyPath: m_Name
-      value: coin_brick_light
-      objectReference: {fileID: 0}
-    - target: {fileID: 2523744366053481748, guid: b615020cd3de8be49b50559d92db875b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.63
-      objectReference: {fileID: 0}
-    - target: {fileID: 2523744366053481748, guid: b615020cd3de8be49b50559d92db875b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -4.91
-      objectReference: {fileID: 0}
-    - target: {fileID: 2523744366053481748, guid: b615020cd3de8be49b50559d92db875b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2523744366053481748, guid: b615020cd3de8be49b50559d92db875b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2523744366053481748, guid: b615020cd3de8be49b50559d92db875b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2523744366053481748, guid: b615020cd3de8be49b50559d92db875b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2523744366053481748, guid: b615020cd3de8be49b50559d92db875b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2523744366053481748, guid: b615020cd3de8be49b50559d92db875b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2523744366053481748, guid: b615020cd3de8be49b50559d92db875b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2523744366053481748, guid: b615020cd3de8be49b50559d92db875b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b615020cd3de8be49b50559d92db875b, type: 3}
 --- !u!1 &1714568119
 GameObject:
   m_ObjectHideFlags: 0
@@ -4047,11 +3938,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6538938442573175831, guid: 6d46300ded2061a488d634eeb080600a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.37
+      value: -3.30238
       objectReference: {fileID: 0}
     - target: {fileID: 6538938442573175831, guid: 6d46300ded2061a488d634eeb080600a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.92
+      value: -4.87792
       objectReference: {fileID: 0}
     - target: {fileID: 6538938442573175831, guid: 6d46300ded2061a488d634eeb080600a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4283,11 +4174,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2523744366053481748, guid: 9092a0e1a5bb6bc49974e16693804e73, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.36
+      value: -4.37
       objectReference: {fileID: 0}
     - target: {fileID: 2523744366053481748, guid: 9092a0e1a5bb6bc49974e16693804e73, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.92
+      value: -4.87792
       objectReference: {fileID: 0}
     - target: {fileID: 2523744366053481748, guid: 9092a0e1a5bb6bc49974e16693804e73, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4321,18 +4212,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3379586553661666981, guid: 9092a0e1a5bb6bc49974e16693804e73, type: 3}
-      propertyPath: m_Size.y
-      value: 0.39443597
-      objectReference: {fileID: 0}
-    - target: {fileID: 3379586553661666981, guid: 9092a0e1a5bb6bc49974e16693804e73, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.302782
-      objectReference: {fileID: 0}
-    - target: {fileID: 7335090465798492825, guid: 9092a0e1a5bb6bc49974e16693804e73, type: 3}
-      propertyPath: m_Distance
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4346,22 +4225,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 962552154}
     m_Modifications:
-    - target: {fileID: 953290512523422051, guid: 6d46300ded2061a488d634eeb080600a, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2541575749563159265, guid: 6d46300ded2061a488d634eeb080600a, type: 3}
       propertyPath: m_Name
       value: mystery_spring
       objectReference: {fileID: 0}
-    - target: {fileID: 4839555239970538215, guid: 6d46300ded2061a488d634eeb080600a, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 9166938163868265440}
-    - target: {fileID: 4839555239970538215, guid: 6d46300ded2061a488d634eeb080600a, type: 3}
-      propertyPath: selfAnimator
-      value: 
-      objectReference: {fileID: 9166938163868265439}
     - target: {fileID: 6538938442573175831, guid: 6d46300ded2061a488d634eeb080600a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.36
@@ -4402,12 +4269,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7673593892071122939, guid: 6d46300ded2061a488d634eeb080600a, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 0f1f184c7391e7940b8335039617354c, type: 2}
-    m_RemovedComponents:
-    - {fileID: 953290512523422051, guid: 6d46300ded2061a488d634eeb080600a, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4423,16 +4285,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88f8300de508a154db01c09c6adf3591, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MysteryCoin
---- !u!95 &9166938163868265439 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 7673593892071122939, guid: 6d46300ded2061a488d634eeb080600a, type: 3}
-  m_PrefabInstance: {fileID: 7427250747823218441}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &9166938163868265440 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4459953796683965525, guid: 6d46300ded2061a488d634eeb080600a, type: 3}
-  m_PrefabInstance: {fileID: 7427250747823218441}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
