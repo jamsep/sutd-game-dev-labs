@@ -8,6 +8,10 @@ TagManager:
   - Enemy
   - Obstacles
   - Mystery
+  - Manager
+  - WallSound
+  - Feet
+  - Head
   layers:
   - Default
   - TransparentFX
@@ -17,8 +21,8 @@ TagManager:
   - UI
   - Enemies
   - Obstacles
-  - 
-  - 
+  - Secret
+  - Feet
   - 
   - 
   - 
