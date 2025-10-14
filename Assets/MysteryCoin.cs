@@ -11,6 +11,7 @@ public class MysteryCoin : MonoBehaviour
     public Animator selfAnimator;
     public AudioSource Audio;
 
+
     bool hit;
     //Vector2 movement = new Vector2(moveHorizontal, 0);
 
@@ -22,9 +23,9 @@ public class MysteryCoin : MonoBehaviour
         spring = GetComponent<SpringJoint2D>();
         spring.frequency = 3f;
     }
+
     void OnCollisionEnter2D(Collision2D col)
     {
-        
         if (!hit){
             // update animator state
             coinAnimator.SetTrigger("coinAnimation");
@@ -55,6 +56,7 @@ public class MysteryCoin : MonoBehaviour
         // play jump sound
         Audio.PlayOneShot(Audio.clip);
     }
+
 
 
 }
