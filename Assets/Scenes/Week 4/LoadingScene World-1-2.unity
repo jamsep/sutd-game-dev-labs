@@ -361,7 +361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LoadingScene
   c: {fileID: 584059488}
-  nextScene: World-1-1
+  nextScene: World-1-2
 --- !u!114 &584059490
 MonoBehaviour:
   m_ObjectHideFlags: 0
