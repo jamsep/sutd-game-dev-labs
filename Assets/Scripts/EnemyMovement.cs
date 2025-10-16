@@ -26,7 +26,7 @@ public class EnemyMovement : MonoBehaviour
 
     void Start()
     {
-        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource = gameObject.GetComponent<AudioSource>();
         enemyBody = GetComponent<Rigidbody2D>();
         // get the starting position
         originalX = transform.position.x;
@@ -74,6 +74,7 @@ public class EnemyMovement : MonoBehaviour
             selfCollider.enabled = false;
             //edgeCollider.enabled = false;
             ani.SetTrigger("stepped");
+            Debug.Log("Goomba dead");
             audioSource.Play();
             dead = true;
         }

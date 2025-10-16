@@ -760,7 +760,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -769,6 +769,160 @@ TextureImporter:
       bones: []
       spriteID: 53ee273d26e383540b68dba3c704e545
       internalID: 1950073511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flag_pole
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1038
+        width: 24
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc63cc2e4806a74fa11c531c5872947
+      internalID: 582597770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: misc-3_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 856
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 3, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44906103381c86541ab78cddf5eeb6ca
+      internalID: -895732995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: misc-3_1
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 934
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5a3804f0517b24d82c52e04b0020ef
+      internalID: 431795024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: misc-3_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 935
+        width: 19
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a41071f7efea5b4ea88f0fb72857a76
+      internalID: -1487131070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: misc-3_3
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 935
+        width: 53
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc9582f6db38404395932848af59c86
+      internalID: -278675017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flag_pole_red
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1038
+        width: 24
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2256c0c6b89eb94887ccabd85594109
+      internalID: -1656401571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brick2
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1094
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97122ec1775b1ee4ab0f63ca3b193f8e
+      internalID: -1291264157
       vertices: []
       indices: 
       edges: []
@@ -789,6 +943,7 @@ TextureImporter:
     nameFileIdTable:
       Ground Brown: -703172041
       Mushroom: 1950073511
+      brick2: -1291264157
       brick_light: 471084475
       castle_left: -1257117079
       castle_right: -1333817313
@@ -798,8 +953,14 @@ TextureImporter:
       coin4: -614092718
       double_bush: 1815032930
       double_cloud: -1517618904
+      flag_pole: 582597770
+      flag_pole_red: -1656401571
       hill_big: -396417861
       hill_small: 1424162610
+      misc-3_0: -895732995
+      misc-3_1: 431795024
+      misc-3_2: -1487131070
+      misc-3_3: -278675017
       mystery_1: -95494231
       nothing: 641324358
       pipe_connector: -1201110029

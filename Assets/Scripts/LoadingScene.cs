@@ -7,10 +7,18 @@ public class LoadingScene : MonoBehaviour
 {
     public CanvasGroup c;
     public string nextScene;
+    public GameConstants gameConstants;
 
     void Start()
     {
-        StartCoroutine(Fade());
+        if (gameConstants.currentLives <= 0)
+        {
+            ReturnToMain();
+        }
+        else
+        {
+            StartCoroutine(Fade());
+        }
     }
 
     IEnumerator Fade()
@@ -38,6 +46,6 @@ public class LoadingScene : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadSceneAsync("World-1-1", LoadSceneMode.Single);
+        SceneManager.LoadSceneAsync("LoadingScene", LoadSceneMode.Single);
     }
 }

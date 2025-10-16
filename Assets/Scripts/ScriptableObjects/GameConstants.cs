@@ -5,7 +5,7 @@ public class GameConstants : ScriptableObject
 {
     // lives
     public int maxLives;
-    public int currentlives;
+    public int currentLives;
 
     // Mario's movement
     public int speed;

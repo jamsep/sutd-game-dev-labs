@@ -7,6 +7,6 @@ public class PauseButtonController : MonoBehaviour, IInteractiveButton
     public void ButtonClick()
     {
         Debug.Log("Onclick pause button");
-        GameManager.instance.GamePauseToggle();
+        GameManager.instance.GamePauseToggle();    
     }
 }

@@ -12,6 +12,7 @@ TagManager:
   - WallSound
   - Feet
   - Head
+  - MainMenu
   layers:
   - Default
   - TransparentFX

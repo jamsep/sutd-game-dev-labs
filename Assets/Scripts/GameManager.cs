@@ -17,18 +17,22 @@ public class GameManager : Singleton<GameManager>
     public GameConstants gc;
 
     private bool isPaused = false;
+    public bool IsPaused { get { return isPaused; } }
+    private AudioSource[] allAudioSources;
 
     void Start()
     {
         gameStart.Invoke();
         Time.timeScale = 1.0f;
         SceneManager.activeSceneChanged += SceneSetup;
+        allAudioSources = FindObjectsOfType<AudioSource>();
     }
 
     public void SceneSetup(Scene current, Scene next)
     {
         gameStart.Invoke();
         SetScore(gameScore.Value);
+        allAudioSources = FindObjectsOfType<AudioSource>();
     }
 
     // Update is called once per frame
@@ -40,7 +44,7 @@ public class GameManager : Singleton<GameManager>
     public void GameRestart()
     {
         // reset score
-        gameScore.Value = 0;
+        gameScore.SetValue(0);
         SetScore(gameScore.Value);
         gameRestart.Invoke();
         Time.timeScale = 1.0f;
@@ -60,6 +64,7 @@ public class GameManager : Singleton<GameManager>
 
     public void GameOver()
     {
+        DecreaseLife();
         Time.timeScale = 0.0f;
         gameOver.Invoke();
     }
@@ -68,6 +73,7 @@ public class GameManager : Singleton<GameManager>
     {
         Time.timeScale = 0.0f;
         isPaused = true;
+        PauseAllAudio();
         gamePause.Invoke();
     }
 
@@ -75,6 +81,7 @@ public class GameManager : Singleton<GameManager>
     {
         Time.timeScale = 1.0f;
         isPaused = false;
+        ResumeAllAudio();
         gameResume.Invoke();
     }
 
@@ -90,6 +97,26 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
+    public void PauseAllAudio()
+    {
+        allAudioSources = FindObjectsOfType<AudioSource>();
+        foreach (var source in allAudioSources)
+        {
+            if (source.isPlaying)
+                source.Pause();
+        }
+    }
+
+    public void ResumeAllAudio()
+    {
+        allAudioSources = FindObjectsOfType<AudioSource>();
+        foreach (var source in allAudioSources)
+        {
+            if (source != null)
+                source.UnPause();
+        }
+    }
+
 
     public void DecreaseLife()
     {
@@ -99,14 +126,8 @@ public class GameManager : Singleton<GameManager>
             return;
         }
 
-        gc.currentlives = Mathf.Max(0, gc.currentlives - 1);
-
-        Debug.Log($"Lives left: {gc.currentlives}");
-
-        if (gc.currentlives <= 0)
-        {
-            GameOver();
-        }
+        gc.currentLives = Mathf.Max(0, gc.currentLives - 1);
+        Debug.Log($"Lives left: {gc.currentLives}");
 
     }
 
@@ -118,7 +139,7 @@ public class GameManager : Singleton<GameManager>
             return;
         }
 
-        gc.currentlives = Mathf.Min(gc.maxLives, gc.currentlives + amount);
-        Debug.Log($"Lives left: {gc.currentlives}");
+        gc.currentLives = Mathf.Min(gc.maxLives, gc.currentLives + amount);
+        Debug.Log($"Lives left: {gc.currentLives}");
     }
 }

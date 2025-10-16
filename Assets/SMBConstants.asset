@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a0aa04f990ff3949a128b4bea572f40, type: 3}
   m_Name: SMBConstants
   m_EditorClassIdentifier: Assembly-CSharp::GameConstants
-  maxLives: 10
+  maxLives: 3
+  currentLives: 3
   speed: 150
   maxSpeed: 5
   upSpeed: 30
