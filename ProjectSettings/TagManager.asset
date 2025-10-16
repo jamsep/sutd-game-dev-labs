@@ -23,8 +23,8 @@ TagManager:
   - Obstacles
   - Secret
   - Feet
-  - 
-  - 
+  - Interactive
+  - Powerups
   - 
   - 
   - 
@@ -48,6 +48,21 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1180307057
+    locked: 0
+  - name: Misc
+    uniqueID: 3485980103
+    locked: 0
+  - name: Entities
+    uniqueID: 1478431043
+    locked: 0
+  - name: Foreground
+    uniqueID: 3924318613
+    locked: 0
+  - name: Castle
+    uniqueID: 3785280187
     locked: 0
   m_RenderingLayers:
   - Default

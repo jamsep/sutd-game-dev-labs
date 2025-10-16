@@ -378,12 +378,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: castle
+      name: castle_left
       rect:
         serializedVersion: 2
         x: 272
         y: 954
-        width: 80
+        width: 40
         height: 80
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -716,7 +716,7 @@ TextureImporter:
         width: 12
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -725,6 +725,50 @@ TextureImporter:
       bones: []
       spriteID: 6d4376bd5f7f8644eb73bcebb1658fd2
       internalID: 641324358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: castle_right
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 954
+        width: 40
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 267f7d4701ec82e4b9e64cf7ab33e1b0
+      internalID: -1333817313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ee273d26e383540b68dba3c704e545
+      internalID: 1950073511
       vertices: []
       indices: 
       edges: []
@@ -744,8 +788,10 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Ground Brown: -703172041
+      Mushroom: 1950073511
       brick_light: 471084475
-      castle: -1257117079
+      castle_left: -1257117079
+      castle_right: -1333817313
       coin1: 1136572940
       coin2: -507436256
       coin3: 1654740324
