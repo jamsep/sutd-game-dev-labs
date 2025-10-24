@@ -12,6 +12,7 @@ TagManager:
   - WallSound
   - Feet
   - Head
+  - gm
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - Obstacles
   - Secret
   - Feet
-  - 
+  - Interactive
   - 
   - 
   - 

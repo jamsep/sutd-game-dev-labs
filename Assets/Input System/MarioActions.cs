@@ -136,6 +136,24 @@ public partial class @MarioActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Fire"",
+                    ""type"": ""Button"",
+                    ""id"": ""504e2dce-1e41-4892-a7ed-2f284499925a"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""secret"",
+                    ""type"": ""Button"",
+                    ""id"": ""7912453b-7f8f-42d3-a4cc-b5b8fedf425f"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -292,6 +310,50 @@ public partial class @MarioActions: IInputActionCollection2, IDisposable
                     ""action"": ""point"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""24e8f0cf-7f8e-4b8a-a500-24373991a712"",
+                    ""path"": ""<Keyboard>/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Fire"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1e382445-025c-4ec4-9c95-576faf068a81"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Fire"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""cf40420d-1da0-420e-84ad-634cbb5fd1b0"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""secret"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7a7ddf46-a7b2-4805-8436-2ff55325bb85"",
+                    ""path"": ""<Keyboard>/period"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""secret"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -322,6 +384,8 @@ public partial class @MarioActions: IInputActionCollection2, IDisposable
         m_gameplay_jumphold = m_gameplay.FindAction("jumphold", throwIfNotFound: true);
         m_gameplay_click = m_gameplay.FindAction("click", throwIfNotFound: true);
         m_gameplay_point = m_gameplay.FindAction("point", throwIfNotFound: true);
+        m_gameplay_Fire = m_gameplay.FindAction("Fire", throwIfNotFound: true);
+        m_gameplay_secret = m_gameplay.FindAction("secret", throwIfNotFound: true);
     }
 
     ~@MarioActions()
@@ -407,6 +471,8 @@ public partial class @MarioActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_gameplay_jumphold;
     private readonly InputAction m_gameplay_click;
     private readonly InputAction m_gameplay_point;
+    private readonly InputAction m_gameplay_Fire;
+    private readonly InputAction m_gameplay_secret;
     /// <summary>
     /// Provides access to input actions defined in input action map "gameplay".
     /// </summary>
@@ -438,6 +504,14 @@ public partial class @MarioActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "gameplay/point".
         /// </summary>
         public InputAction @point => m_Wrapper.m_gameplay_point;
+        /// <summary>
+        /// Provides access to the underlying input action "gameplay/Fire".
+        /// </summary>
+        public InputAction @Fire => m_Wrapper.m_gameplay_Fire;
+        /// <summary>
+        /// Provides access to the underlying input action "gameplay/secret".
+        /// </summary>
+        public InputAction @secret => m_Wrapper.m_gameplay_secret;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -479,6 +553,12 @@ public partial class @MarioActions: IInputActionCollection2, IDisposable
             @point.started += instance.OnPoint;
             @point.performed += instance.OnPoint;
             @point.canceled += instance.OnPoint;
+            @Fire.started += instance.OnFire;
+            @Fire.performed += instance.OnFire;
+            @Fire.canceled += instance.OnFire;
+            @secret.started += instance.OnSecret;
+            @secret.performed += instance.OnSecret;
+            @secret.canceled += instance.OnSecret;
         }
 
         /// <summary>
@@ -505,6 +585,12 @@ public partial class @MarioActions: IInputActionCollection2, IDisposable
             @point.started -= instance.OnPoint;
             @point.performed -= instance.OnPoint;
             @point.canceled -= instance.OnPoint;
+            @Fire.started -= instance.OnFire;
+            @Fire.performed -= instance.OnFire;
+            @Fire.canceled -= instance.OnFire;
+            @secret.started -= instance.OnSecret;
+            @secret.performed -= instance.OnSecret;
+            @secret.canceled -= instance.OnSecret;
         }
 
         /// <summary>
@@ -593,5 +679,19 @@ public partial class @MarioActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnPoint(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Fire" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnFire(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "secret" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSecret(InputAction.CallbackContext context);
     }
 }

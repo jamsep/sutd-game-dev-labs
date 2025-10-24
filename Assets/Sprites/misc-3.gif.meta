@@ -716,7 +716,7 @@ TextureImporter:
         width: 12
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -725,6 +725,182 @@ TextureImporter:
       bones: []
       spriteID: 6d4376bd5f7f8644eb73bcebb1658fd2
       internalID: 641324358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: misc-3_0
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1189
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b0bd081ec4d474694f799044ecf697
+      internalID: 765437189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bluebrick
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1133
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58fc55ca166be6a4592e1027bbf2d028
+      internalID: 32843658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bluebrick2
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30607fdbf412ab6429934d9486dcd1ba
+      internalID: 555166714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mystery2
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 1057
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae50c9d500406e349a7544a8e186149e
+      internalID: 254086441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9613facedddf9384cb846f2532af8f22
+      internalID: -423443225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: misc-3_1
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 769
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d20b61d2db9c2439a3fd8a99bd2efb
+      internalID: -1979559297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: misc-3_2
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1171
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38f47086dcc091438b8b3efc589e1bb
+      internalID: 330951362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stsar
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 1132
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510371f638ce6004190f19ff5ac5ea6b
+      internalID: 1419162906
       vertices: []
       indices: 
       edges: []
@@ -744,6 +920,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Ground Brown: -703172041
+      bluebrick: 32843658
+      bluebrick2: 555166714
       brick_light: 471084475
       castle: -1257117079
       coin1: 1136572940
@@ -754,6 +932,11 @@ TextureImporter:
       double_cloud: -1517618904
       hill_big: -396417861
       hill_small: 1424162610
+      misc-3_0: 765437189
+      misc-3_1: -1979559297
+      misc-3_2: 330951362
+      mushroom: -423443225
+      mystery2: 254086441
       mystery_1: -95494231
       nothing: 641324358
       pipe_connector: -1201110029
@@ -766,6 +949,7 @@ TextureImporter:
       question_3: -804498516
       single_bush: -850796433
       single_cloud: -308794536
+      stsar: 1419162906
       stupid_cloud: -605199236
       triple_cloud: -911583345
       triple_green: -1601074648

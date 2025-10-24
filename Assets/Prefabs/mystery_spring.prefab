@@ -130,13 +130,13 @@ MonoBehaviour:
   useInt:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 0d68df010b6b078459381088b423dc66, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: IncreaseScore
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -317,6 +317,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7159214527492641048}
+  - component: {fileID: 4954461544130179261}
   m_Layer: 0
   m_Name: Coin Parent
   m_TagString: Untagged
@@ -340,6 +341,20 @@ Transform:
   - {fileID: 7856958853636821467}
   m_Father: {fileID: 6538938442573175831}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4954461544130179261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7469063689947229360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7093eb624d258904e81e950164ad7d34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoinPowerup
+  type: 0
+  spawned: 0
 --- !u!1 &8148179360964900692
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,9 +368,9 @@ GameObject:
   - component: {fileID: 8720641953244652070}
   - component: {fileID: 8396518668324256608}
   - component: {fileID: 2970517450640189425}
-  - component: {fileID: 4839555239970538215}
   - component: {fileID: 7673593892071122939}
   - component: {fileID: 4459953796683965525}
+  - component: {fileID: 8698562521127051324}
   m_Layer: 7
   m_Name: mystery_1
   m_TagString: Mystery
@@ -530,21 +545,6 @@ SpringJoint2D:
   m_Distance: 1
   m_DampingRatio: 1
   m_Frequency: 5
---- !u!114 &4839555239970538215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8148179360964900692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88f8300de508a154db01c09c6adf3591, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MysteryCoin
-  coinAnimator: {fileID: 2810959075048896912}
-  selfAnimator: {fileID: 7673593892071122939}
-  Audio: {fileID: 4459953796683965525}
 --- !u!95 &7673593892071122939
 Animator:
   serializedVersion: 7
@@ -664,3 +664,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8698562521127051324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8148179360964900692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bb1a9db4e250dd428498540a6713319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestionBoxPowerupController
+  powerup: {fileID: 4954461544130179261}
+  coinAnimator: {fileID: 2810959075048896912}
+  selfAnimator: {fileID: 7673593892071122939}
+  Audio: {fileID: 4459953796683965525}

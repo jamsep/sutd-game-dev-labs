@@ -1,0 +1,34 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Events;
+
+public class EnemyManager : MonoBehaviour
+{
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    void Awake()
+    {
+
+    }
+
+    public void GameRestart()
+    {
+        foreach (Transform child in transform)
+        {
+            child.GetComponent<EnemyMovement>().GameRestart();
+        }
+    }
+}
